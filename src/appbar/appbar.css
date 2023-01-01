@@ -1,23 +1,18 @@
 .AppbarButton {
   color: #8e939a !important;
+  border-bottom: transparent 1px;
+  border-style: groove;
 }
 
 .AppbarButton:hover {
   color: #49515d !important;
   background: transparent !important;
+  border-bottom: #49515d 1px;
+  border-style: groove;
 }
 
-.Fader {
-  font-family: Arial;
-
-  animation: fadeIn 5s;
+.ContentContainer {
+  margin-top: 5%;
+  
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
