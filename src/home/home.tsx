@@ -8,16 +8,20 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
+import "./home.css"
 
 
 function Home() {
   return (
     <Container>
       <Card variant="outlined">
-        <CardMedia sx={{ height: "15rem" }} image={require("./banner.jpg")}>
-        <Grid container spacing={0}>
-          <Grid xs={12} sm={12} md={6}>
-                <Card> Hi there</Card>
+        <CardMedia className="CardMedia" image={require("./banner.jpg")}>
+        <Grid sx={{height:"inherit"}} container spacing={0}>
+          <Grid /* sx={{height:"inherit"}} */ xs={12} sm={6} md={6}>
+                <Card sx={{height:"inherit", opacity:0.5}}> Hi there</Card>
+          </Grid>
+          <Grid /* sx={{height:"inherit"}} */ xs={12} sm={6} md={6}>
+                <Card sx={{height:"inherit", opacity:0.5}}> Hi there</Card>
           </Grid>
           </Grid>
         </CardMedia>

@@ -1,3 +1,13 @@
+.AppNav {
+  position: sticky !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #49515d !important;
+}
 .AppbarButton {
   color: #8e939a !important;
   border-bottom: transparent 1px;
@@ -10,9 +20,3 @@
   border-bottom: #49515d 1px;
   border-style: groove;
 }
-
-.ContentContainer {
-  margin-top: 5%;
-  
-}
-
