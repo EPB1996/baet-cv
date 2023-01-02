@@ -15,6 +15,7 @@ import Button from "@mui/material/Button";
 import Home from "../home/home";
 import { Container, CssBaseline } from "@mui/material";
 import "./appbar.css";
+import CV from "../cv/cv";
 
 interface Props {
   /**
@@ -121,7 +122,7 @@ export default function DrawerAppBar(props: Props) {
       <Box component="main">
         
         {content === "Home" ? <Home></Home> : null}
-        {content === "CV" ? <Button></Button> : null}
+        {content === "CV" ? <CV></CV> : null}
       </Box>
     </Box>
   );

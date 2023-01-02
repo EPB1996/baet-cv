@@ -14,8 +14,8 @@ import "./home.css"
 function Home() {
   return (
     <Container>
-      <Card variant="outlined">
-        <CardMedia className="CardMedia" image={require("./banner.jpg")}>
+      <Card >
+        <CardMedia className="CardMedia" sx={{height:"15rem"}} image={require("../assest/banner.jpg")}>
         <Grid sx={{height:"inherit"}} container spacing={0}>
           <Grid /* sx={{height:"inherit"}} */ xs={12} sm={6} md={6}>
                 <Card sx={{height:"inherit", opacity:0.5}}> Hi there</Card>
