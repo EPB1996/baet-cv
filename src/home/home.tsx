@@ -2,7 +2,6 @@ import {
   Box,
   Card,
   CardContent,
-  CardHeader,
   CardMedia,
   Container,
   Grid,
@@ -13,7 +12,7 @@ import "./home.css"
 
 function Home() {
   return (
-    <Container>
+    
       <Card >
         <CardMedia className="CardMedia" sx={{height:"15rem"}} image={require("../assest/banner.jpg")}>
         <Grid sx={{height:"inherit"}} container spacing={0}>
@@ -54,7 +53,7 @@ function Home() {
           </Grid>
         </CardContent>
       </Card>
-    </Container>
+ 
   );
 }
 

@@ -1,0 +1,11 @@
+.TimelineContainer {
+    border-left: 2px solid #e0e0e0;
+    padding-left: 0 !important;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.TimelineGridItem{
+    padding-left: 10px;
+    padding-right: 10px;
+}

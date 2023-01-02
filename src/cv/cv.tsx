@@ -2,39 +2,56 @@ import {
   Box,
   Card,
   CardContent,
-  CardHeader,
   CardMedia,
   Container,
   Grid,
   Typography,
 } from "@mui/material";
+import Timeline from "../timeline/timeline";
 import "./cv.css";
 
 function CV() {
   return (
-    <Container>
-      <Card /* variant="outlined" */>
+
+      <Card >
         <CardMedia
           className="CardMedia"
           sx={{ height: "5rem" }}
           image={require("../assest/banner.jpg")}
         ></CardMedia>
         <CardContent sx={{ height: "auto" }}>
-          <Grid container spacing={0}>
-            <Grid xs={12} sm={12} md={6}>
-              <Typography variant="h5" align="left">
+          <Grid container >
+            <Grid  className="TimelineGridItem" xs={12} sm={12} md={6}>
+              <Typography variant="h5" align="left"> 
                 Exerience
               </Typography>
+              <Box className="TimelineContainer">
+              <Timeline></Timeline>
+              <Timeline></Timeline>
+              </Box>
+
+              
             </Grid>
-            <Grid xs={12} sm={12} md={6}>
+            <Grid className="TimelineGridItem" xs={12} sm={12} md={6}>
             <Typography variant="h5" align="left">
                 Education
               </Typography>
+              <Box className="TimelineContainer">
+              <Timeline></Timeline>
+              <Timeline></Timeline>
+              <Timeline></Timeline>
+              <Timeline></Timeline>
+              <Timeline></Timeline>
+              <Timeline></Timeline>
+              <Timeline></Timeline>
+              <Timeline></Timeline>
+              </Box>
+
             </Grid>
           </Grid>
         </CardContent>
       </Card>
-    </Container>
+    
   );
 }
 
