@@ -1,3 +1,9 @@
+.CVCard{
+    border-radius: 15px !important;
+    border: none !important;
+    box-shadow: 5px 15px 25px 5px rgba(0,0,0,0.1);
+}
+
 .TimelineContainer {
     border-left: 2px solid #e0e0e0;
     padding-left: 0 !important;
@@ -9,3 +15,4 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+

@@ -1,5 +1,5 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
-import "./timeline.css";
+import "./timelineItem.css";
 import { TimelineItemProps } from "./timelineInteraces";
 
 

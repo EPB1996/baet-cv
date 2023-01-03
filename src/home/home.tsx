@@ -13,7 +13,7 @@ import "./home.css"
 function Home() {
   return (
     
-      <Card >
+      <Card variant="outlined" className="ContactCard">
         <CardMedia className="CardMedia" sx={{height:"15rem"}} image={require("../assest/banner.jpg")}>
         <Grid sx={{height:"inherit"}} container spacing={0}>
           <Grid /* sx={{height:"inherit"}} */ xs={12} sm={6} md={6}>

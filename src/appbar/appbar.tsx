@@ -69,35 +69,48 @@ export default function DrawerAppBar(props: Props) {
     <Box className="App">
       <CssBaseline />
       <AppBar className="AppNav">
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-          >
-            MUI
-          </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button
-                key={item}
-                className ="AppbarButton"
-                onClick={(e) => handleClick(e, item)}
-              >
-                {item}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
+        <Box className="MarginHandler">
+          <Toolbar sx={{ left: 0, maxWidth: "1032px", margin: "0 auto" }}>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { sm: "none" } }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography
+              variant="h4"
+              component="div"
+              sx={{ paddingRight: "3px", display: { xs: "none", sm: "block" } }}
+            >
+              Etienne
+            </Typography>
+            <Typography
+              variant="h4"
+              component="div"
+              sx={{
+                flexGrow: 1,
+                display: { xs: "none", sm: "block" },
+                color: "#2196f3",
+              }}
+            >
+              Baumgartner
+            </Typography>
+            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              {navItems.map((item) => (
+                <Button
+                  key={item}
+                  className="AppbarButton"
+                  onClick={(e) => handleClick(e, item)}
+                >
+                  {item}
+                </Button>
+              ))}
+            </Box>
+          </Toolbar>
+        </Box>
       </AppBar>
       <Box component="nav">
         <Drawer
@@ -119,8 +132,10 @@ export default function DrawerAppBar(props: Props) {
           {drawer}
         </Drawer>
       </Box>
-      <Box component="main">
-        
+      <Box
+        component="main"
+        sx={{ padding: "16px", maxWidth: "1032px", margin: "0 auto" }}
+      >
         {content === "Home" ? <Home></Home> : null}
         {content === "CV" ? <CV></CV> : null}
       </Box>

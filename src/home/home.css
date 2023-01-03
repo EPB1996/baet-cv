@@ -1,0 +1,6 @@
+.ContactCard{
+    aspect-ratio: 1.75;
+    border-radius: 15px !important;
+    border: none !important;
+    box-shadow: 5px 15px 25px 5px rgba(0,0,0,0.1);
+}

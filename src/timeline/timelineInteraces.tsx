@@ -10,4 +10,5 @@ export interface TimelineProjectProps {
   title: string;
   description: string;
   periode: string;
+  skills: String[];
 }

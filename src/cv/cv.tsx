@@ -27,20 +27,20 @@ function CV() {
     title: "JobTitle",
     description: "JobDescription",
     periode: "2000-Now",
+    skills: ["Skill", "SkillSkill", "SkillSkillSkillSkill", "Skill", "Skill"],
   };
 
   return (
-    <Card>
+    <Card className="CVCard">
       <CardMedia
         className="CardMedia"
         sx={{ height: "5rem" }}
         image={require("../assest/banner.jpg")}
       ></CardMedia>
       <CardContent sx={{ height: "auto" }}>
-        a
         <Grid container>
           <Grid className="TimelineGridItem" xs={12} sm={12} md={6}>
-            <Typography variant="h5" align="left">
+            <Typography sx={{ fontWeight: "bold" }} variant="h5" align="left">
               Exerience
             </Typography>
             <Box className="TimelineContainer">
@@ -48,11 +48,20 @@ function CV() {
             </Box>
           </Grid>
           <Grid className="TimelineGridItem" xs={12} sm={12} md={6}>
-            <Typography variant="h5" align="left">
+            <Typography sx={{ fontWeight: "bold" }} variant="h5" align="left">
               Education
             </Typography>
             <Box className="TimelineContainer">
-            <TimelineProject {...projectTemplate}></TimelineProject>
+              <TimelineItem {...itemTemplate}></TimelineItem>
+            </Box>
+          </Grid>
+
+          <Grid className="TimelineGridItem" xs={12} sm={12} md={12}>
+            <Typography sx={{ fontWeight: "bold" }} variant="h5" align="left">
+              Projects
+            </Typography>
+            <Box className="TimelineContainer">
+              <TimelineProject {...projectTemplate}></TimelineProject>
             </Box>
           </Grid>
         </Grid>
