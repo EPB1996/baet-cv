@@ -52,10 +52,8 @@
   border-radius: 16px;
   padding: 0px;
   vertical-align: middle;
-  border: 1px solid rgba(231, 235, 240, 0.1);
-  /* font-weight: 500; */
-  color:"inherit";
-  background:"#e2e2e2"
+  color: "#2196f3" !important;
+  background: "#e2e2e2";
 }
 
 .TimelineGridItem {

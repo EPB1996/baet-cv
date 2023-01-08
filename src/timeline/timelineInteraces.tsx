@@ -8,7 +8,10 @@ export interface TimelineItemProps {
 
 export interface TimelineProjectProps {
   title: string;
+  subtitle: string;
   description: string;
+  responsabilities:String[];
+  learned:String[];
   periode: string;
   skills: String[];
 }

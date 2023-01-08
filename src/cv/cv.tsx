@@ -6,6 +6,9 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
+import EducationDTO from "../data/education";
+import JobsDTO from "../data/jobExperience";
+import ProjectDTO from "../data/projects";
 import {
   TimelineItemProps,
   TimelineProjectProps,
@@ -15,20 +18,6 @@ import TimelineProject from "../timeline/timelineProject";
 import "./cv.css";
 
 function CV() {
-  const itemTemplate: TimelineItemProps = {
-    title: "JobTitle",
-    description: "JobDescription",
-    institution: "Institution",
-    logo: require("../assest/ost_logo.png"),
-    periode: "2000-Now",
-  };
-
-  const projectTemplate: TimelineProjectProps = {
-    title: "JobTitle",
-    description: "JobDescription",
-    periode: "2000-Now",
-    skills: ["Skill", "SkillSkill", "SkillSkillSkillSkill", "Skill", "Skill"],
-  };
 
   return (
     <Card className="CVCard">
@@ -38,13 +27,15 @@ function CV() {
         image={require("../assest/banner.jpg")}
       ></CardMedia>
       <CardContent sx={{ height: "auto" }}>
-        <Grid container>
+        <Grid container >
           <Grid className="TimelineGridItem" xs={12} sm={12} md={6}>
             <Typography sx={{ fontWeight: "bold" }} variant="h5" align="left">
               Exerience
             </Typography>
             <Box className="TimelineContainer">
-              <TimelineItem {...itemTemplate}></TimelineItem>
+              {JobsDTO.map((job) => {
+                return <TimelineItem {...job}></TimelineItem>;
+              })}
             </Box>
           </Grid>
           <Grid className="TimelineGridItem" xs={12} sm={12} md={6}>
@@ -52,7 +43,9 @@ function CV() {
               Education
             </Typography>
             <Box className="TimelineContainer">
-              <TimelineItem {...itemTemplate}></TimelineItem>
+              {EducationDTO.map((education) => {
+                return <TimelineItem {...education}></TimelineItem>;
+              })}
             </Box>
           </Grid>
 
@@ -61,7 +54,11 @@ function CV() {
               Projects
             </Typography>
             <Box className="TimelineContainer">
-              <TimelineProject {...projectTemplate}></TimelineProject>
+
+            {ProjectDTO.map((project) => {
+                return <TimelineProject {...project}></TimelineProject>
+              })}
+              
             </Box>
           </Grid>
         </Grid>
