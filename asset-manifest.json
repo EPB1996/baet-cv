@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/baet-cv/static/css/main.8ab2ced5.css",
+    "main.js": "/baet-cv/static/js/main.ce5529b8.js",
+    "static/js/787.6de9d2ab.chunk.js": "/baet-cv/static/js/787.6de9d2ab.chunk.js",
+    "static/media/banner.jpg": "/baet-cv/static/media/banner.132e0914e4e451189d3e.jpg",
+    "static/media/ost_logo.png": "/baet-cv/static/media/ost_logo.aeb5a0066bd1288effd1.png",
+    "index.html": "/baet-cv/index.html",
+    "main.8ab2ced5.css.map": "/baet-cv/static/css/main.8ab2ced5.css.map",
+    "main.ce5529b8.js.map": "/baet-cv/static/js/main.ce5529b8.js.map",
+    "787.6de9d2ab.chunk.js.map": "/baet-cv/static/js/787.6de9d2ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ab2ced5.css",
+    "static/js/main.ce5529b8.js"
+  ]
+}
